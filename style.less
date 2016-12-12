@@ -1,16 +1,73 @@
-@primary-color: #3399ff;
-@secondary-color: #66ccff;
-@ternary-color: #99ccff;
+@primary-color: #5460a5;
+@secondary-color: #7585e5;
+@ternary-color: white;
+@background-color: #e6f2ff;
+@primary-color-transparent: rgba(0, 0, 0, 0.5);
+@border-color: #7585e5;
 
-body {
+.page {
+    background-color: @background-color;
     padding: 0px;
     margin: 0px;
     font-family: sans-serif;
 }
 
+/////////////////////////////////////// BANNER ////////////////////////////////////////
+
 .banner-basic {
     padding: 1em;
+    text-align: center;
     margin: 0px;
     background-color: @primary-color;
     color: white;
 };
+
+.banner-basic h2 {
+    padding: 1em;
+}
+
+.banner-basic p {
+    padding: 2em;
+}
+
+/////////////////////////////////////// IMAGE BANNER ////////////////////////////////////////
+
+.banner-image {
+    padding: 1em;
+    text-align: center;
+    margin: 0px;
+    background-size: cover;
+    color: white;
+};
+
+.banner-image h2 {
+    padding: 1em;
+    background-color: @primary-color-transparent;
+}
+
+.banner-image p {
+    padding: 2em;
+}
+
+/////////////////////////////////////// CARUSEL ////////////////////////////////////
+
+.carusel-basic {
+    background-color: @ternary-color;
+    margin: 2em;
+    border-radius: 5px;
+}
+
+.carusel-basic h2 {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: @primary-color;
+    color: white;
+    margin: 0em;
+    padding: 0em;
+    text-align: center;
+}
+
+.carusel-basic p {
+    padding: 1em;
+    text-align: justify;
+}
