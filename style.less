@@ -1,16 +1,93 @@
-@primary-color: #5460a5;
-@secondary-color: #7585e5;
+@primary-color: #e66f00;
+@secondary-color: #99ccff;
 @ternary-color: white;
-@background-color: #e6f2ff;
+@background-color: #eeeeee;
 @primary-color-transparent: rgba(0, 0, 0, 0.5);
+@primary-color-transparent07: rgba(0, 0, 0, 0.7);
 @border-color: #7585e5;
+@menu-color: #0099cc;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: /*Tahoma, Verdana, Segoe,*/ sans-serif;
+}
 
 .page {
     background-color: @background-color;
-    padding: 0px;
-    margin: 0px;
-    font-family: sans-serif;
+    background-size: cover;
 }
+
+///////////////////////////////////////// MENU ////////////////////////////////////////
+
+.menu {
+
+    ul {
+        position: fixed;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: @primary-color-transparent07;
+        min-width: 100%;
+        z-index: 9999;
+
+        li {
+            float: left;
+
+            a {
+                display: block;
+                text-align: center;
+                padding: 15px;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/////////////////////////////////////// HEADER ////////////////////////////////////////
+
+.header {
+    padding: 20%;
+    margin: 0em;
+    text-align: left;
+    margin-bottom: 1em;
+    background-size: cover;
+    background-color: @primary-color;
+    width: 100%;
+    height: 100%;
+    color: white;
+};
+
+.header h1 {
+    background-color: @primary-color-transparent07;
+    padding: 1em;
+}
+
+.header p {
+    display: box;
+    background-color: @primary-color-transparent;
+    padding: 1em;
+    text-align: justify;
+}
+
+/////////////////////////////////////// FOOTER ////////////////////////////////////////
+
+.footer {
+    padding: 2em;
+    padding-top: 100px;
+    margin: 0;
+    margin-top: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+    background-size: cover;
+    background-color: @primary-color;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    color: white;
+};
 
 /////////////////////////////////////// BANNER ////////////////////////////////////////
 
@@ -43,6 +120,7 @@
 .banner-image h2 {
     padding: 1em;
     background-color: @primary-color-transparent;
+    margin-top: 0;
 }
 
 .banner-image p {
@@ -53,21 +131,56 @@
 
 .carusel-basic {
     background-color: @ternary-color;
-    margin: 2em;
+    margin: 2em 1em 2em 1em;
     border-radius: 5px;
 }
 
 .carusel-basic h2 {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-    background-color: @primary-color;
-    color: white;
+    background-color: @ternary-color;
+    color: black;
     margin: 0em;
     padding: 0em;
+    padding-top: .3em;
+    padding-bottom: .3em;
     text-align: center;
 }
 
 .carusel-basic p {
+    padding: 1em;
+    text-align: justify;
+}
+
+//////////////////////////////// CARUSEL IMAGE ////////////////////////////////////
+
+.carusel-image {
+    background-color: @ternary-color;
+    margin: 2em 1em 2em 1em;
+    border-radius: 5px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.carusel-img-div {
+    background: none;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    min-height: 200px;
+    background-size: cover;
+}
+
+.carusel-image h2 {
+    background-color: @ternary-color;
+    color: black;
+    margin: 0em;
+    padding: 0em;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    text-align: center;
+}
+
+.carusel-image p {
     padding: 1em;
     text-align: justify;
 }
