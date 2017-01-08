@@ -102,12 +102,13 @@
   color: black;
   margin: 0em;
   padding: 0em;
-  padding-top: .3em;
+  padding-top: .5em;
   padding-bottom: .3em;
   text-align: center;
 }
 .carusel-basic p {
-  padding: 1em;
+  padding: 2em;
+  padding-top: 0.5em;
   text-align: justify;
 }
 .carusel-image {
@@ -129,11 +130,12 @@
   color: black;
   margin: 0em;
   padding: 0em;
-  padding-top: .3em;
+  padding-top: .5em;
   padding-bottom: .3em;
   text-align: center;
 }
 .carusel-image p {
-  padding: 1em;
+  padding: 2em;
+  padding-top: 0.5em;
   text-align: justify;
 }
