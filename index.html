@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="styles/style.css">
     </head>
 
+    <script src="scripts/angular/angular.min.js"></script>
+
     <body class="page">
 
         <!----------------------------- MENU ------------------------------------>
@@ -27,12 +29,11 @@
 
         <div id="header"></div>
 
-        <div class="header" style="background-image: url(images/office.jpg)">
+        <div class="header" style="{{style}}" ng-app="headerApplication" ng-controller="headerController">
             <div class="centered">
-                <h1>Lorem ipsum dolor</h1>
+                <h1>{{title}}</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar sem non libero vehicula, nec placerat elit ullamcorper.
-                    Quisque a congue lacus. Nam porta massa ex, nec auctor arcu ultrices ac. Morbi non ultricies nibh.
+                    {{text}}
                 </p>
             </div>
         </div>
@@ -234,5 +235,11 @@
 
     <script src="scripts/jquery-3.1.1/jquery-3.1.1.min.js"></script>
     <script src="scripts/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <script src="scripts/angular/angular.min.js"></script>
+
+    <!--------------------------------- HEADER SCRIPTS ------------------------------>
+
+    <script src="scripts/applications/headerapplication.js"></script>
+    <script src="scripts/controllers/headercontroller.js"></script>
+
+    <!--------------------------------- END SCRIPTS --------------------------------->
 </xhtml>

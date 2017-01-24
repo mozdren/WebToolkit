@@ -1,0 +1,1 @@
+var headerApplication = angular.module("headerApplication", []);
