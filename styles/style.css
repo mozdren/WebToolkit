@@ -5,7 +5,12 @@
   font-family: sans-serif;
 }
 .row {
-  margin-top: 3em;
+  margin: 0;
+  padding: 0;
+}
+.vertical-separator {
+  display: box;
+  margin-bottom: 3em;
 }
 .menu ul {
   position: fixed;
@@ -28,7 +33,7 @@
   text-decoration: none;
 }
 .header {
-  padding: 20%;
+  padding: 0em;
   margin: 0em;
   text-align: left;
   margin-bottom: 1em;
@@ -37,11 +42,19 @@
   height: 100%;
   color: white;
 }
-.header h1 {
+.header .centered {
+  margin-left: 20%;
+  margin-right: 20%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header .centered h1 {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 1em;
 }
-.header p {
+.header .centered p {
+  margin-top: 1em;
   display: box;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1em;

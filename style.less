@@ -16,7 +16,13 @@
 }
 
 .row {
-    margin-top: 3em;
+    margin: 0;
+    padding: 0;
+}
+
+.vertical-separator {
+    display: box;
+    margin-bottom: 3em;
 }
 
 ///////////////////////////////////////// MENU ////////////////////////////////////////
@@ -50,28 +56,38 @@
 /////////////////////////////////////// HEADER ////////////////////////////////////////
 
 .header {
-    padding: 20%;
+    padding: 0em;
     margin: 0em;
     text-align: left;
     margin-bottom: 1em;
     background-size: cover;
     background-color: @primary-color;
-    //width: 100%;
     height: 100%;
     color: white;
+
+    .centered {
+        margin-left: 20%;
+        margin-right: 20%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        h1 {
+            background-color: @primary-color-transparent07;
+            padding: 1em;
+        }
+
+        p {
+            margin-top: 1em;
+            display: box;
+            background-color: @primary-color-transparent;
+            padding: 1em;
+            text-align: justify;
+        }
+    }
 };
 
-.header h1 {
-    background-color: @primary-color-transparent07;
-    padding: 1em;
-}
 
-.header p {
-    display: box;
-    background-color: @primary-color-transparent;
-    padding: 1em;
-    text-align: justify;
-}
 
 /////////////////////////////////////// FOOTER ////////////////////////////////////////
 
